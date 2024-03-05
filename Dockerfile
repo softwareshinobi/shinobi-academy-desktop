@@ -10,9 +10,9 @@ FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
 
 ## ARG DEBIAN_FRONTEND=noninteractive
 
-WORKDIR /content
+WORKDIR /provision
 
-COPY /content .
+COPY /provision .
 
 ## /provision.bash /provision.bash
 
