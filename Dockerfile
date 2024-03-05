@@ -10,10 +10,16 @@ FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
 
 ## ARG DEBIAN_FRONTEND=noninteractive
 
-COPY /provision.bash /provision.bash
+WORKDIR /content
+
+COPY /content .
+
+## /provision.bash /provision.bash
+
+##WORKDIR content/
 
 ## RUN chmod +x /ubuntu-server-provision.sh
 
-RUN bash /provision.bash
+RUN bash provision.bash
 
 ##RUN apt update && apt install zip kdenlive recordmydesktop
