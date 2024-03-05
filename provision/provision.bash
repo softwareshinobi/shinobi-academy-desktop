@@ -56,6 +56,14 @@ apt-get install -y keepassx
 
 apt-get install -y recordmydesktop vlc kdenlive 
 
+## install recording
+
+pwd
+
+cp recording/record.bash /home/softwareshinobi/
+
+ls  /home/softwareshinobi/
+
 ##shotcut
 
 ## java stuff
@@ -95,3 +103,5 @@ usermod -a -G docker $userName
 ##
 
 echo "fin."
+
+
