@@ -34,11 +34,11 @@ apt-get install docker-compose -y;
 
 ##
 
-apt-get install -y sudo;
+##apt-get install -y sudo;
 
-apt-get install -y openssh-server;
+##apt-get install -y openssh-server;
 
-service ssh start;
+##service ssh start;
 
 ## networking things
 
@@ -54,7 +54,9 @@ apt-get install -y keepassx
 
 ## video editing things
 
-apt-get install -y recordmydesktop vlc kdenlive shotcut
+apt-get install -y recordmydesktop vlc kdenlive 
+
+##shotcut
 
 ## java stuff
 
@@ -70,17 +72,17 @@ apt-get install -y openjdk-17-jdk-headless maven gradle
 
 ## doing work on the user
 
-userName="softwareshinobi";
+##userName="softwareshinobi";
 
-userID="4444";
+##userID="4444";
 
-mkdir /home/users;
+##mkdir /home/users;
 
-useradd -rm -d /home/$userName -s /bin/bash -u $userID $userName;
+##useradd -rm -d /home/$userName -s /bin/bash -u $userID $userName;
 
-chown root:root /home/$userName -R
+##chown root:root /home/$userName -R
 
-usermod -a -G sudo $userName
+##usermod -a -G sudo $userName
 
 usermod -a -G docker $userName
 
@@ -88,7 +90,7 @@ usermod -a -G docker $userName
 
 ### make this work later. moving on. // echo '`$userName`:`$userName`' | chpasswd
 
-echo 'softwareshinobi:softwareshinobi' | chpasswd
+##echo 'softwareshinobi:softwareshinobi' | chpasswd
 
 ##
 
