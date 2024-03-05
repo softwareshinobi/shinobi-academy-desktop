@@ -1,3 +1,9 @@
+#!/bin/bash
+
+set -e
+
+set -x
+
 reset
 
 clear
