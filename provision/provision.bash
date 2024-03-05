@@ -60,7 +60,13 @@ apt-get install -y recordmydesktop vlc kdenlive
 
 pwd
 
-cp recording/record.bash /home/softwareshinobi/
+find /provision/
+
+ls  /home/softwareshinobi/
+
+mv /provision/recording/record.bash /home/softwareshinobi/
+
+find /provision/
 
 ls  /home/softwareshinobi/
 
