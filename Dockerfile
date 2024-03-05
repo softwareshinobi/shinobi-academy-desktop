@@ -16,4 +16,4 @@ FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
 
 ## RUN bash /provision.bash
 
-RUN apt install zip kdenlive recordmydesktop
+RUN apt update && apt install zip kdenlive recordmydesktop
