@@ -12,6 +12,8 @@ set -x;
 
 ## 
 
+
+
 cat /etc/issue;
 
 echo "Software Shinobi Desktop 22.04" > /etc/issue;
@@ -30,10 +32,19 @@ rm /etc/apt/sources.list.d/google-chrome.list
 
 apt-get update;
 
-apt-get install docker-compose -y;
+
+
+
+apt-get upgrade
+
+
+sudo apt install ubuntu-release-upgrader-core -y
+
+do-release-upgrade
 
 ##
 
+apt-get install docker-compose -y;
 ##apt-get install -y sudo;
 
 ##apt-get install -y openssh-server;
