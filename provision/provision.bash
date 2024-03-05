@@ -35,7 +35,7 @@ apt-get update;
 
 
 
-apt-get upgrade
+apt-get upgrade -y
 
 
 sudo apt install ubuntu-release-upgrader-core -y
