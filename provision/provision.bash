@@ -14,11 +14,11 @@ set -x;
 
 
 
-cat /etc/issue;
+##cat /etc/issue;
 
-echo "Software Shinobi Desktop 22.04" > /etc/issue;
+##echo "Software Shinobi Desktop 22.04" > /etc/issue;
 
-cat /etc/issue;
+##cat /etc/issue;
 
 ## read the articles. annoying. the repos are broken and it broke everything
 
@@ -45,6 +45,7 @@ do-release-upgrade
 ##
 
 apt-get install docker-compose -y;
+
 ##apt-get install -y sudo;
 
 ##apt-get install -y openssh-server;
