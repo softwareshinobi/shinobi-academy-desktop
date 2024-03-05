@@ -8,7 +8,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
 
 ENV DEBIAN_FRONTEND noninteractive
 
-## ARG DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /provision
 
