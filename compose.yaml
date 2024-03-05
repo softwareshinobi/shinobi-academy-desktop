@@ -62,7 +62,7 @@ services:
 
 ##########################################
 ##
-## desktop situation
+## software shinobi studio situation
 ##
 ##########################################
 
@@ -104,8 +104,9 @@ services:
 
             - .volumes/studio:/home/softwareshinobi
 
-
         environment:
+        
+            TZ: America/Denver
 
             USER_UID: 1000
 
@@ -113,9 +114,9 @@ services:
 
             USER: softwareshinobi
 
-            PASSWORD: desktop
+            PASSWORD: studio
 
-            HTTP_PASSWORD: desktop
+            HTTP_PASSWORD: studio
 
             VIRTUAL_HOST: studio.softwareshinobi.digital
 
