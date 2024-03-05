@@ -62,7 +62,7 @@ pwd
 
 find /provision/
 
-ls  /home/softwareshinobi/
+mkdir  /home/softwareshinobi/
 
 mv /provision/recording/record.bash /home/softwareshinobi/
 
