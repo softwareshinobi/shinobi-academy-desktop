@@ -35,22 +35,24 @@ apt-get update;
 
 
 
-apt-get upgrade -y
+##apt-get upgrade -y
 
 
-sudo apt install ubuntu-release-upgrader-core -y
+##sudo apt install ubuntu-release-upgrader-core -y
 
-do-release-upgrade
+##do-release-upgrade
 
 ##
 
 apt-get install docker-compose -y;
 
-##apt-get install -y sudo;
+##
 
-##apt-get install -y openssh-server;
+apt-get install -y sudo;
 
-##service ssh start;
+apt-get install -y openssh-server;
+
+service ssh start;
 
 ## networking things
 
@@ -86,7 +88,7 @@ ls  /home/softwareshinobi/
 
 ## java stuff
 
-apt-get install -y openjdk-17-jdk-headless maven gradle
+#apt-get install -y openjdk-17-jdk-headless maven gradle
 
 ## snap stuff
 
