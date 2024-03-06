@@ -114,9 +114,9 @@ services:
 
             USER: softwareshinobi
 
-            PASSWORD: studio
+            PASSWORD: softwareshinobi
 
-            HTTP_PASSWORD: studio
+            HTTP_PASSWORD: softwareshinobi
 
             VIRTUAL_HOST: studio.softwareshinobi.digital
 

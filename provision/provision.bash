@@ -102,15 +102,15 @@ ls  /home/softwareshinobi/
 
 userName="softwareshinobi";
 
-##userID="4444";
+userID="4444";
 
 ##mkdir /home/users;
 
-##useradd -rm -d /home/$userName -s /bin/bash -u $userID $userName;
+useradd -rm -d /home/$userName -s /bin/bash -u $userID $userName;
 
 ##chown root:root /home/$userName -R
 
-##usermod -a -G sudo $userName
+usermod -a -G sudo $userName
 
 usermod -a -G docker $userName
 
