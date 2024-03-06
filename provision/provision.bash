@@ -100,7 +100,7 @@ ls  /home/softwareshinobi/
 
 ## doing work on the user
 
-##userName="softwareshinobi";
+userName="softwareshinobi";
 
 ##userID="4444";
 
@@ -123,5 +123,3 @@ usermod -a -G docker $userName
 ##
 
 echo "fin."
-
-
