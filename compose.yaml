@@ -70,7 +70,7 @@ services:
 
         container_name: software-shinobi-studio
 
-        image: dorowu/ubuntu-desktop-lxde-vnc
+        image: softwareshinobi/software-shinobi-studio
 
         restart: unless-stopped
 
