@@ -78,21 +78,21 @@ services:
 
             context: .
 
-        deploy:
-
-            resources:
-
-                limits:
-
-                    cpus: 2
-
-                    memory: 3.5G
-
-                reservations:
-
+##        deploy:
+##
+##            resources:
+##
+##                limits:
+##
+##                    cpus: 2
+##
+##                    memory: 3.5G
+##
+##                reservations:
+##
 ##                    cpus: 1
-
-                    memory: 2.0G
+##
+##                    memory: 2.0G
 
         volumes:
 
