@@ -24,6 +24,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN rm /etc/apt/sources.list.d/google-chrome.list
 
-RUN apt update && apt install -y recordmydesktop
+RUN apt update && apt install -y recordmydesktop kdenlive zip docker-compose curl wget net-tools keepassx vlc dos2unix
 
-## RUN apt update && apt install zip kdenlive recordmydesktop
+## RUN apt update && apt install   recordmydesktop
