@@ -12,6 +12,10 @@ ls
 
 mkdir apps
 
+cd apps
+
+##
+
 ls
 
 wget https://dlcdn.apache.org/netbeans/netbeans/21/netbeans-21-bin.zip
