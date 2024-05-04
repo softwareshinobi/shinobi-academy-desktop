@@ -10,9 +10,9 @@ set -x
 
 ls
 
-mkdir apps
+mkdir /apps
 
-cd apps
+cd /apps
 
 ##
 
