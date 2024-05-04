@@ -5,6 +5,12 @@ set -e
 set -x
 
 ##
+## create the apps dir and populate with unzipped netbeans content
+##
+
+ls
+
+mkdir apps
 
 ls
 
@@ -18,5 +24,10 @@ ls
 
 unzip netbeans.zip
 
+ls
+
 pwd
 
+##
+##
+##
