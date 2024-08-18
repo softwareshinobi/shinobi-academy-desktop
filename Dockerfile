@@ -4,7 +4,7 @@ FROM dorowu/ubuntu-desktop-lxde-vnc:focal-lxqt as baseDesktop
 
 WORKDIR /
 
-COPY /provision .
+COPY /provision /
 
 ####
 
