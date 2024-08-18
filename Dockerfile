@@ -8,10 +8,13 @@ RUN apt update && apt install -y recordmydesktop kdenlive shotcut zip docker-com
 
 COPY /provision .
 
-
 RUN bash installs/sshserver.bash
 
 RUN bash installs/media.bash
+
+EXPOSE 22
+
+#########################################
 
 #RUN bash installs/docker.bash
 
@@ -28,6 +31,6 @@ RUN bash installs/media.bash
 
 ##RUN chmod +x /ubuntu-server-provision.sh
 
-## EXPOSE 22
+
 
 ## CMD ["/usr/sbin/sshd","-D"]
