@@ -8,11 +8,13 @@ RUN apt update && apt install -y recordmydesktop kdenlive shotcut zip docker-com
 
 COPY /provision .
 
-RUN bash installs/docker.bash
+#RUN bash installs/docker.bash
 
 RUN bash installs/netbeans.bash
 
 RUN bash installs/sshserver.bash
+
+RUN bash installs/media.bash
 
 ##FROM ubuntu:noble
 
