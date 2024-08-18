@@ -6,6 +6,12 @@ WORKDIR /
 
 COPY /provision /
 
+cp /provision/media/Backgrounds/desktop.png /usr/share/lxqt/themes/light/simple_blue_widescreen.png
+
+RUN ls -lha /
+
+RUN ls -lha /usr/share/lxqt/themes/light/simple_blue_widescreen.png
+
 ####
 
 ARG DEBIAN_FRONTEND=noninteractive
