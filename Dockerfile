@@ -31,7 +31,7 @@ EXPOSE 22
 
 ####
 
-RUN bash installs/media.bash
+###RUN bash installs/media.bash
 
 #########################################
 
