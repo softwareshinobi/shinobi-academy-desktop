@@ -24,7 +24,7 @@ services:
 
         volumes:
 
-            - /tmp/volumes/urus/softwareshinobi:/home/softwareshinobi
+            - /tmp/volumes/urus/shinobi:/home/shinobi
 
         domainname: urus.embaNET.softwareshinobi.digital
 
