@@ -23,7 +23,7 @@ set -x;
 
 cat /etc/issue;
 
-echo "Shinobi OS 22.04" > /etc/issue;
+echo "Shinobi OS Sian 20.04" > /etc/issue;
 
 cat /etc/issue;
 

@@ -8,5 +8,5 @@ ls -lha /
 
 pwd
 
-cp provision/media/Backgrounds/desktop.png /usr/share/lxqt/themes/light/simple_blue_widescreen.png
+cp /provision/media/Backgrounds/desktop.png /usr/share/lxqt/themes/light/simple_blue_widescreen.png
 
