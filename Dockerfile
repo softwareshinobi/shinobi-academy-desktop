@@ -1,4 +1,4 @@
-FROM dorowu/ubuntu-desktop-lxde-vnc as desktopBase
+FROM dorowu/ubuntu-desktop-lxde-vnc:focal-lxqt as baseDesktop
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -8,13 +8,17 @@ RUN apt update && apt install -y recordmydesktop kdenlive shotcut zip docker-com
 
 COPY /provision .
 
+####
+
 RUN bash installs/sshserver.bash
 
-RUN bash installs/media.bash
-
-RUN service ssh start
+CMD ["/usr/sbin/sshd","-D"]
 
 EXPOSE 22
+
+####
+
+RUN bash installs/media.bash
 
 #########################################
 
@@ -35,4 +39,4 @@ EXPOSE 22
 
 
 
-## CMD ["/usr/sbin/sshd","-D"]
+
