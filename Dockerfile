@@ -6,7 +6,7 @@ WORKDIR /
 
 COPY /provision /
 
-cp /provision/media/Backgrounds/desktop.png /usr/share/lxqt/themes/light/simple_blue_widescreen.png
+COPY /provision/media/Backgrounds/desktop.png /usr/share/lxqt/themes/light/simple_blue_widescreen.png
 
 RUN ls -lha /
 
