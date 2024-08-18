@@ -12,6 +12,8 @@ RUN bash installs/sshserver.bash
 
 RUN bash installs/media.bash
 
+RUN service ssh start
+
 EXPOSE 22
 
 #########################################
