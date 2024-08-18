@@ -2,17 +2,17 @@ services:
 
 ##########################################
 ##
-## software shinobi studio situation
+## shinobi academy desktop situation
 ##
 ##########################################
 
-    software-shinobi-desktop:
+    shinobi-academy-desktop:
 
-        container_name: software-shinobi-desktop
+        container_name: shinobi-academy-desktop
 
         hostname: urus
 
-        image: softwareshinobi/software-shinobi-desktop
+        image: softwareshinobi/shinobi-academy-desktop
 
         restart: unless-stopped
 
@@ -28,6 +28,14 @@ services:
 
         domainname: urus.embaNET.softwareshinobi.digital
 
+
+        ports:
+
+          - "5980:80"
+
+          - "5900:5900"
+            
+
         environment:
         
             TZ: America/Bogota
@@ -36,11 +44,11 @@ services:
 
             USER_GID: 1000
 
-            USER: softwareshinobi
+            USER: shinobi
 
-            PASSWORD: passw0rd
+            PASSWORD: shinobi
 
-            HTTP_PASSWORD: passw0rd
+            HTTP_PASSWORD: shinobi
 
             VIRTUAL_HOST: urus.embaNET.softwareshinobi.digital
 
