@@ -10,9 +10,9 @@ services:
 
         container_name: software-shinobi-desktop
 
-        hostname: hyperion
+        hostname: urus
 
-        image: softwareshinobi/software-shinobi-studio
+        image: softwareshinobi/software-shinobi-desktop
 
         restart: unless-stopped
 
@@ -21,29 +21,12 @@ services:
             context: .
 
             dockerfile: Dockerfile
-    
-
-##        deploy:
-##
-##            resources:
-##
-##                limits:
-##
-##                    cpus: 2
-##
-##                    memory: 3.5G
-##
-##                reservations:
-##
-##                    cpus: 1
-##
-##                    memory: 2.0G
 
         volumes:
 
-            - .volumes/desktop:/root
+            - /tmp/volumes/urus/softwareshinobi:/home/softwareshinobi
 
-        domainname: desktop.softwareshinobi.digital
+        domainname: urus.embaNET.softwareshinobi.digital
 
         environment:
         
@@ -53,12 +36,13 @@ services:
 
             USER_GID: 1000
 
-            USER: root
+            USER: softwareshinobi
 
             PASSWORD: passw0rd
 
             HTTP_PASSWORD: passw0rd
 
-            VIRTUAL_HOST: desktop.softwareshinobi.digital
+            VIRTUAL_HOST: urus.embaNET.softwareshinobi.digital
 
-            LETSENCRYPT_HOST: desktop.softwareshinobi.digital
+            LETSENCRYPT_HOST: urus.embaNET.softwareshinobi.digital
+            

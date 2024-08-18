@@ -33,7 +33,7 @@ apt-get update;
 
 ##
 
-sudo apt-get install ca-certificates curl;
+sudo apt -y install ca-certificates curl;
 
 ## Installing Docker + Compose (Not Docker Compose)
 
@@ -71,7 +71,7 @@ service ssh start;
 
 ## setting up users and groups
 
-bash users.bash
+#bash users.bash
 
 ##
 
