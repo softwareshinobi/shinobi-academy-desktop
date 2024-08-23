@@ -28,7 +28,6 @@ services:
 
         domainname: urus.embaNET.softwareshinobi.digital
 
-
         ports:
 
           - "5922:22"
