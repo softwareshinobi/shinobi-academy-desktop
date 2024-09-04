@@ -21,15 +21,7 @@ set -x;
 
 ## setting server hostname
 
-cat /etc/issue;
-
-echo "Shinobi OS 22.04" > /etc/issue;
-
-cat /etc/issue;
-
-## updating APT software packages
-
-apt-get update;
+sudo apt-get update;
 
 ##
 
@@ -53,26 +45,8 @@ echo \
 
 ### Docker Engine situation install
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt purge -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose docker docker.io
+
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 sudo docker run hello-world
-
-## Install more software
-
-apt-get install -y vim zip wget net-tools;
-
-## install and start a local ssh server
-
-apt-get install -y openssh-server;
-
-apt-get install -y sudo;
-
-service ssh start;
-
-## setting up users and groups
-
-#bash users.bash
-
-##
-
-echo "fin."

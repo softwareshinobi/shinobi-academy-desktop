@@ -2,6 +2,7 @@
 set -x
 
 outputDIR=/tmp/media/backgrounds/
+
 outputCNT=4
 
 ls -lha /
