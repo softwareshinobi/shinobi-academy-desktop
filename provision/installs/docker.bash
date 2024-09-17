@@ -1,36 +1,10 @@
 #!/bin/bash
 
-##
-## This script installs stuff 
-##     to set up a linux server
-##     suitable for newbies.
-##
-## This linux server will be hosted under
-##     linux.softwareshinobi.digital
-##
-## Before you go, check read around my blog!
-##
-##     https://www.softwareshinobi.digital
-##
-
-##
-
-set -e;
-
-set -x;
-
-## setting server hostname
-
-sudo apt-get update;
-
-##
+sudo apt update;
 
 sudo apt -y install ca-certificates curl;
 
-## Installing Docker + Compose (Not Docker Compose)
-
-
-### APT package dependency setup
+## aptitude package dependency setup
 
 sudo install -m 0755 -d /etc/apt/keyrings
 
@@ -43,10 +17,20 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-### Docker Engine situation install
+## docker compose install
+
+sudo apt update
 
 sudo apt purge -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose docker docker.io
 
-sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+## run the sample container
+
+reset;clear;
 
 sudo docker run hello-world
+
+echo
+echo "finished installing docker compose."
+echo
