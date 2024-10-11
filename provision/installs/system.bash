@@ -8,7 +8,7 @@ set -x;
 
 ## 
 
-ARG DEBIAN_FRONTEND=noninteractive
+DEBIAN_FRONTEND=noninteractive
 
 rm /etc/apt/sources.list.d/google-chrome.list
 
