@@ -1,14 +1,15 @@
 
-apt-get install -y openssh-server;
+apt update
 
-apt-get install -y sudo;
+apt install -y openssh-server sudo;
 
-service ssh start;
+#/etc/init.d/ssh restart
+
+#netstat -tlpn
 
 ## setting up users and groups
 
 #bash users.bash
 
 ##
-
-echo "fin."
+##echo "fin."
