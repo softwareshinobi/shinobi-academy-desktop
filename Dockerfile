@@ -19,23 +19,21 @@ RUN ls -lha /usr/share/lxqt/themes/light/simple_blue_widescreen.png
 
 ####
 
+RUN bash installs/system.bash
+
+RUN apt update && apt install  openssh-server sudo -y
+
+##RUN bash installs/sshserver.bash
 
 
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1020 test 
 
+RUN  echo 'test:test' | chpasswd
 
-
-RUN bash installs/sshserver.bash
-
-
-
+RUN service ssh start
 
 EXPOSE 22
 
-##CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd","-D"]
 
-##RUN service ssh start &
-##CMD service ssh start && while true; do sleep 3000; done
-####
-
-ENTRYPOINT ["sh", "/entry.bash"]
 
