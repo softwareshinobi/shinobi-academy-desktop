@@ -19,11 +19,9 @@ RUN ls -lha /usr/share/lxqt/themes/light/simple_blue_widescreen.png
 
 ####
 
-ARG DEBIAN_FRONTEND=noninteractive
+RUN bash installs/system.bash
 
-RUN rm /etc/apt/sources.list.d/google-chrome.list
-
-RUN apt update && apt upgrade -y && apt install -y recordmydesktop kdenlive shotcut zip curl wget net-tools keepassx mpv dos2unix git filezilla openjdk-17-jdk maven remmina thunderbird openssh-server sudo vim nslookup sshpass
+RUN bash installs/software.bash
 
 RUN bash installs/hostname.bash
 
