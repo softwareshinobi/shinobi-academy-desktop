@@ -23,13 +23,17 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN rm /etc/apt/sources.list.d/google-chrome.list
 
-RUN apt update && apt upgrade -y && apt install -y openvpn recordmydesktop kdenlive shotcut zip docker-compose curl wget net-tools keepassx vlc dos2unix git filezilla openjdk-17-jdk maven gradle remmina thunderbird openssh-server sudo vim zip
+RUN apt update && apt upgrade -y && apt install -y recordmydesktop kdenlive shotcut zip curl wget net-tools keepassx mpv dos2unix git filezilla openjdk-17-jdk maven remmina thunderbird openssh-server sudo vim nslookup sshpass
 
 RUN bash installs/hostname.bash
 
+RUN bash installs/docker.bash
+
+RUN bash installs/network.bash
+
+RUN bash installs/sshserver.bash
+
 ####
-
-
 
 CMD ["/usr/sbin/sshd","-D"]
 

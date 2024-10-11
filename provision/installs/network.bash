@@ -16,7 +16,7 @@
 
 ## Install more software
 
-apt-get install -y wget net-tools;
+apt-get install -y wget net-tools curl nslookup
 
 
 ##
