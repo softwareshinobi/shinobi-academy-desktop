@@ -29,35 +29,14 @@ RUN bash installs/docker.bash
 
 RUN bash installs/network.bash
 
-RUN bash installs/sshserver.bash
+RUN apt autoremove -y
 
 ####
+
+RUN bash installs/sshserver.bash
 
 CMD ["/usr/sbin/sshd","-D"]
 
 EXPOSE 22
 
 ####
-
-###RUN bash installs/media.bash
-
-#########################################
-
-#RUN bash installs/docker.bash
-
-#RUN bash installs/netbeans.bash
-
-
-##FROM ubuntu:noble
-
-##
-
-
-
-##COPY provision/provision.bash /provision.bash
-
-##RUN chmod +x /ubuntu-server-provision.sh
-
-
-
-
